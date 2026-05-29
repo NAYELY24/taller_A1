@@ -1,0 +1,159 @@
+/* =========================
+   BASE
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: #0b0f14;
+    color: #e6f7f7;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav{
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 18px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #0ff0d4;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0ff0d4;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: radial-gradient(circle at top, #0ff0d420, transparent 60%);
+}
+
+.hero h1{
+    font-size: 60px;
+    color: #0ff0d4;
+    text-shadow: 0 0 20px #0ff0d4;
+    animation: glow 2s infinite alternate;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #b5dcdc;
+    max-width: 600px;
+}
+
+/* BOTÓN */
+.btn{
+    margin-top: 25px;
+    padding: 12px 28px;
+    border: 1px solid #0ff0d4;
+    color: #0ff0d4;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #0ff0d420;
+}
+
+.btn:hover{
+    background: #0ff0d4;
+    color: #0b0f14;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0ff0d4;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.section{
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2{
+    font-size: 32px;
+    color: #0ff0d4;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section h2::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #0ff0d4;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card{
+    background: #111821;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #e6f7f7;
+}
+
+.card:hover{
+    border: 1px solid #0ff0d4;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #0ff0d4;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    border-top: 1px solid #0ff0d420;
+    color: #7aa9a9;
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+@keyframes glow{
+    from{
+        text-shadow: 0 0 10px #0ff0d4;
+    }
+    to{
+        text-shadow: 0 0 25px #0ff0d4;
+    }
+}
